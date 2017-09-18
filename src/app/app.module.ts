@@ -8,9 +8,12 @@ import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent } from './heroes.component';
 import { HeroService } from './hero.service';
+import { DashboardComponent } from './dashboard.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    DashboardComponent,
     HeroDetailComponent,
     HeroesComponent
   ],
@@ -18,9 +21,10 @@ import { HeroService } from './hero.service';
     BrowserModule,
     FormsModule
   ],
-  providers: [
-    HeroService
-  ],
+  providers: [ HeroService ],
   bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+
+export class AppModule {
+
+ }
